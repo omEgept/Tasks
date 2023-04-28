@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daily Tasks</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Daily Tasks</h1>
+        <div class="add-task">
+            <input type="text" id="task" placeholder="Add a task...">
+            <input type="text" id="time" placeholder="Expected time (m/h)">
+            <button onclick="addTask()">Add</button>
+        </div>
+        <div class="tasks">
+          <h2>Tasks to be completed</h2>
+          <ul id="incomplete-tasks">
+          </ul>
+          <h2>Tasks completed</h2>
+          <ul id="completed-tasks">
+          </ul>
+      </div>
+        <div class="task-count">
+            <p id="completed-count"></p>
+            <p id="incomplete-count"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
